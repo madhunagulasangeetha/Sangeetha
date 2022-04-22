@@ -1,0 +1,45 @@
+abstract class Employee  //ABSTRACT CLASS
+{
+abstract void details();
+}
+class Account extends Employee  //INHERITANCE
+{
+double id;
+long join_date;
+long mn;
+float bal;
+String name,eid,bname;
+private int accno;  //DATA ENCAPSULATION
+private int pin;
+void details()
+{
+accno=15;
+name="samera";
+bal=32.54f;
+pin=7337;
+bname="SBI";
+id=232;
+mn=98765432;
+eid="samera123@gmail.com";
+
+System.out.println("--------------");
+System.out.println("Employee Details");
+System.out.println("--------------");
+System.out.println("Account Number="+accno);
+System.out.println("Account Holder Name="+name);
+System.out.println("Account Blance="+bal);
+System.out.println("Password="+pin);
+System.out.println("Branch Name="+bname);
+System.out.println("Identity Number="+id);
+System.out.println("Mobile Number="+mn);
+System.out.println("Email id="+eid);
+}
+}
+class EmployeeDemo
+{ 
+public static void main(String[] args)
+{
+Employee ee=new Account();
+ee.details();
+}
+}
